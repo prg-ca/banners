@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=240,height=400">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.min.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_1.18.0_ed5816e732515f56d96a67f6a2a15ccb_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_1.18.0_56fa823cfbbef1c2f4d4346f0f0e6c3c_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_1.18.0_71489205621d46cbe88348eeb8fe493f_min.js"></script>
+  <script type="text/javascript">
+    var clickTag = "#"; 
+
+      document.addEventListener("DOMContentLoaded", function(event) { 
+
+        var delayTxt = 0;
+
+        while (delayTxt < 25) {
+          TweenLite.to("#hero", 1, {width: "240px", height: "245px", left: 0, top:"60px", opacity: 1, delay: delayTxt});
+          TweenLite.to("#slogan01", 1, {ease: Elastic.easeInOut, width: "257px", height: "130px", left: "-10px", top:"85px", opacity: 1, delay: delayTxt + 0.5});
+          TweenLite.to("#slogan02", 1, {opacity: 1, delay: delayTxt + 2});
+          TweenLite.to("#slogan02", 1, {opacity: 0, delay: delayTxt + 3});
+          TweenLite.to("#txt", 1, { ease: Elastic.easeInOut, left: "10px", delay: delayTxt + 2.5});
+          TweenLite.to("#pack", 1, { ease: Elastic.easeInOut, bottom: 0, delay: delayTxt + 3});
+
+          if (delayTxt < 15) {
+            TweenLite.to("#hero", 1, {width: "35px", height: "30px", left: "100px", top:"240px", opacity: 0, delay: delayTxt + 6.5});
+            TweenLite.to("#slogan01", 0.5, {width: "10px", height: "30px", left: "115px", top:"200px", opacity: 0, delay: delayTxt + 6.5});
+            TweenLite.to("#txt", 1, { ease: Power1.easeInOut, left: "-100%", delay: delayTxt + 6.5});
+            TweenLite.to("#pack", 1, { ease: Power1.easeInOut, bottom: "-100%", delay: delayTxt + 6.5});
+          }        
+
+          delayTxt += 8;
+        };
+
+        TweenLite.to(".radial", 0.5, {animation: "none", delay: 24});
+
+   });
+
+    
+  </script>
+</head>
+<body>
+  <a href="javascript:window.open(window.clickTag)" target="_blank">
+    <div class="container">
+      <div class="radial">
+        <img src="radial_bg.jpg" width="400" height="400">
+      </div>
+      <div class="leaves">
+        <img src="leaves.png" width="240" height="124">
+      </div>
+      <div id="hero">
+        <img src="hero.png">
+      </div>
+      <div id="slogan01" class="slogan">
+        <img src="slogan01.png">
+      </div>
+      <div id="slogan02" class="slogan">
+        <img src="slogan02.png" width="257" height="130">
+      </div>
+      <div id="green_bottom"></div>
+      <div id="pack">
+        <img src="pack.png" width="178" height="260">
+      </div>    
+      <div id="txt">
+        <img src="txt.png" width="142" height="54">
+      </div>
+    </div>
+  </a>
+
+
+
+</body>

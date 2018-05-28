@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=240,height=400">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.min.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_1.18.0_ed5816e732515f56d96a67f6a2a15ccb_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_1.18.0_56fa823cfbbef1c2f4d4346f0f0e6c3c_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_1.18.0_71489205621d46cbe88348eeb8fe493f_min.js"></script>
+  <script type="text/javascript">
+    var clickTag = "#"; 
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      var delayMain = 0;
+
+      while (delayMain < 25) {
+        TweenLite.to("#txt", 1.2, { ease: Elastic.easeInOut, width: "220px", left: "10px", top: "175px", opacity: 1, delay: delayMain });
+        TweenLite.to("#txt", 0.5, { ease: Power1.easeInOut, top: "15px", delay: delayMain + 2});
+        TweenLite.to("#skwd-01", 1.2, { ease: Power1.easeInOut, width: "350px", opacity: 1, delay: delayMain + 2});
+        TweenLite.to("#skwd-inner", 1.8, { ease: Power1.easeInOut, left:"-10px", delay: delayMain + 2.8});
+        TweenLite.to("#skwd-01", 0.7, { ease: Power1.easeInOut, width: "10px", opacity: 0, delay: delayMain + 4.8});
+        TweenLite.to("#txt", 0.7, { ease: Power1.easeInOut, top: "355px", delay: delayMain + 4.8});
+        TweenLite.to("#line-wrp", 0.5, { ease: Back.easeInOut, height: "350px", delay: delayMain + 5});
+        TweenLite.to("#logo", 0.4, { ease: Power2.easeInOut, width: "200px", top: "105px", left: "20px", opacity: 1, delay: delayMain + 5.3});
+        TweenLite.to("#line-wrp", 0.5, { ease: Back.easeInOut, opacity: 0, delay: delayMain + 6});
+        TweenLite.to("#logo", 0.5, { ease: Power2.easeInOut, opacity:0, delay: delayMain + 6});
+        TweenLite.to("#txt", 0.8, { ease: Power1.easeInOut, top: "20px", delay: delayMain + 6});
+
+        TweenLite.to("#strong", 0.4, { ease: Power2.easeInOut, left: "26px", opacity: 1, delay: delayMain + 6.5});
+        TweenLite.to("#rush", 0.4, { ease: Power2.easeInOut, left: "113px", opacity: 1, delay: delayMain + 6.8});
+
+        if (delayMain < 15) {
+          TweenLite.to("#rush", 0.5, {opacity: 0, delay: delayMain + 8.7});
+          TweenLite.to("#strong", 0.5, {opacity: 0, delay: delayMain + 8.7});
+          TweenLite.to("#txt", 0.5, { opacity: 0, delay: delayMain + 8.7});
+
+          TweenLite.to("#line-wrp", 0, { opacity: 1, height: 0, delay: delayMain + 8.8});
+          TweenLite.to("#logo", 0, { width: "10px", left: "115px", top:"115px", delay: delayMain + 8.8});
+          TweenLite.to("#rush", 0, {left: "300px", opacity: 1, delay: delayMain + 8.8});
+          TweenLite.to("#strong", 0, {left: "-300px", opacity: 1, delay: delayMain + 8.8});
+          TweenLite.to("#txt", 0, { width: "10px", top: "190px", left: "115px", delay: delayMain + 8.8});
+          TweenLite.to("#skwd-inner", 0, { ease: Power1.easeInOut, left:"76px", delay: delayMain + 8.8});
+        }
+
+        delayMain += 9;
+      }
+   });
+
+  </script>
+</head>
+<body>
+	<a href="javascript:window.open(window.clickTag)" target="_blank">
+		<div class="container">
+      <div id="skwd-01">
+        <div id="skwd-inner">
+          <img src="img.jpg">
+        </div>
+      </div>
+      <div id="line-wrp">
+        <div id="line">
+          <img src="Polosa.png">
+        </div>
+      </div>
+      <div id="logo">
+        <img src="logo.svg">
+      </div>
+      <div id="rush">
+        <img src="rush.png">
+      </div>
+      <div id="strong">
+        <img src="strong.png">
+      </div>
+      <div id="txt">
+        <img src="txt.svg">
+      </div>
+
+		</div>
+	</a>
+</body>

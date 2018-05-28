@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Немного о баннерах</title>
+  <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+<!--   <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/jquery.auto-complete.css" rel="stylesheet"> -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<body>
+
+  <header class="page-header  container">
+    <h1 class="page-header__title">немного о баннерах</h1>
+    <div class="page-header__image">
+      <img src="images/prg_banners_heroImg.svg">
+    </div>
+  </header>
+
+  <div class="page-content">
+
+    <section class="intro  container">
+      <h2 class="text__title">Что такое web-баннер?</h2>
+      <p class="text__paragr">
+        Баннер (англ. banner — флаг, транспарант) — графическое изображение рекламного характера, аналогичное рекламному модулю в прессе. Может быть как статичным изображением или даже текстом, так и содержать анимированные элементы (вплоть до видео и интерактивных объектов). Как правило, может содержать гиперссылку на сайт рекламодателя или страницу с дополнительной информацией.
+      </p>
+    </section> 
+
+    <section class="file-formats">
+      <div class="container">
+        <h2 class="text__title">основные форматы файлов</h2>
+        <p class="text__paragr">
+          Выберите формат, чтобы узнать подробности
+        </p>
+        <div class="file-formats__bar">
+          <button class="file-formats__btn  file-formats__btn--selected" id="PNG-btn" onclick="openFormat('PNG', 'PNG-btn')">PNG</button>
+          <button class="file-formats__btn  file-formats__btn--gif" id="GIF-btn" onclick="openFormat('GIF', 'GIF-btn')">GIF</button>
+          <button class="file-formats__btn  file-formats__btn--swf" id="SWF-btn" onclick="openFormat('SWF', 'SWF-btn')">SWF</button>
+          <button class="file-formats__btn  file-formats__btn--html" id="HTML-btn" onclick="openFormat('HTML', 'HTML-btn')">HTML5</button>
+        </div>
+
+        <div id="PNG" class="file-formats__item  formatName">
+          <p class="text__paragr  text__paragr--left">PNG/JPG - статичный формат, т.е. графическое изображение, без движения. Часто используются в качестве заглушки для устройств, на которых невозможно воспроизведение динамичных баннеров.</p>
+          <div class="file-formats__figs">
+            <div class="file-formats__fig">
+              <p class="text__paragr  file-formats__note">
+                Статичное изображение, оно же "заглушка"
+              </p>
+              <image src="images/Agusha_240x400_zaglushka.png">
+            </div>
+          </div>
+        </div>
+
+        <div id="GIF" class="file-formats__item  formatName" style="display:none">
+          <p class="text__paragr  text__paragr--left">Фактически gif-баннер - это архив, хранящий несколько сжатых изображений одновременно и воспроизводящий их в заранее установленном порядке кадр за кадром, создавая эффект анимации. Имеют большой  «вес» даже при несложной анимации.</p> 
+          <!-- <button class="file-formats__link  file-formats__link--gif">Посмотреть пример</button> -->
+          <div class="file-formats__figs">
+            <div class="file-formats__fig">
+              <p class="text__paragr  file-formats__note">
+                Один GIF-баннер = 26 отдельных кадров-картинок = почти 300 кб веса
+              </p>
+              <image src="images/agusha-kino-web.gif">
+            </div>
+            <div class="file-formats__fig">
+              <image src="images/agusha_layers.png">
+            </div>
+          </div>
+
+        </div>
+
+        <div id="SWF" class="file-formats__item  formatName" style="display:none">
+          <p class="text__paragr  text__paragr--left">SWF, он же Flash-баннер. Формат из начала-середины двухтысячных, сейчас считается мертвым, т.к. не воспроизводится на большинстве устройств.</p>
+          <a class="file-formats__link" href="https://redmondmag.com/articles/2017/07/25/adobe-ending-flash-support.aspx" target="_blank">
+            И даже Adobe, владелец Flash-а, смирился с его смертью и объявил о скором прекращении поддержки.
+          </a>
+        </div>
+
+        <div id="HTML" class="file-formats__item  formatName" style="display:none">
+          <p class="text__paragr  text__paragr--left">HTML5-баннера (именно их будем называть просто баннерами дальше) - это наше всё. Доступны практически повсеместно, могут иметь весьма скромный размер, а возможности анимации достаточно широки. Кроме того, это единственный способ создать “адаптивный” баннер. Этот формат мы и будем рассматривать более подробно.</p>
+          <div class="file-formats__figs">
+            <div class="file-formats__fig">
+              <p class="text__paragr  file-formats__note">
+                HTML5-баннер <br>(архив с баннером весит меньше 150 кб).
+              </p>
+              <iframe class="file-formats__banner" src="banners_examples/Agusha_240x400/Agusha_240x400.html" title="banner example 01" width="240" height="400">
+                <p>Your browser does not support iframes.</p>
+              </iframe>
+            </div>
+          </div>
+          <p class="text__paragr  text__paragr--left"><i>Т.к. это не рекламная площадка, во время показа баннера что-то может сбиваться или рассинхронизироваться. Если это произошло, дождитесь смены кадра или перегрузите страницу. </i></p>
+  
+
+        </div>
+      </div>
+    </section> 
+
+    <section class="html5  container">
+      <h2 class="text__title">html5-баннер. Знакомимся ближе</h2>
+       <p class="text__paragr">
+        Заглянем внутрь готового к размещению баннера:
+      </p>
+      <div class="html5__inner-cont">
+        <div class="html5__inner-col  html5__inner-col--left">
+          <img src="images/html_inner.png">
+        </div>
+        <div class="html5__inner-col  html5__inner-col--right">
+          <ul class="text__list  text__list--html"> 
+            <li class="text__list-item">Html-файл - разметка (ЧТО должно быть в баннере). CSS-файл - стили (КАК это должно ВЫГЛЯДЕТЬ). JS-файл - анимации (КАК должно ДВИГАТЬСЯ). Файлы могут быть объединены. </li>
+            <li class="text__list-item">Все остальное - файлы jpg, svg, png - изображения, из которых баннер и строится.</li>
+            <li class="text__list-item"><i>NB: В готовом архиве не должно быть шрифтов, поэтому весь текст, набранный фирменными шрифтами, так же переводится в картинки.</i></li>
+          </ul>
+
+        </div>
+      </div>
+      <p class="text__paragr  text__paragr--conclusion">
+        Проще говоря, баннер - это совокупность картинок, которые появляются и исчезают в заданном порядке.
+      </p>
+
+      <h3 class="text__subtitle">3 кита, на которых стоят анимированные html5-баннера</h3>
+      <div class="html5__figs">
+        <div class="html5__fig  html5__fig--01">
+          <h4 class="html5__subhead">Изменение положения</h4>
+          <iframe class="html5__example" src="banners_examples/position.html" title="banner example 02" width="290" height="290">
+                <p>Your browser does not support iframes.</p>
+          </iframe>
+        </div>
+        <div class="html5__fig  html5__fig--02">
+          <h4 class="html5__subhead">Изменение размера</h4>
+          <iframe class="html5__example" src="banners_examples/size.html" title="banner example 03" width="290" height="290">
+                <p>Your browser does not support iframes.</p>
+          </iframe>
+        </div>
+        <div class="html5__fig  html5__fig--03">
+          <h4 class="html5__subhead">Изменение прозрачности</h4>
+          <iframe class="html5__example" src="banners_examples/opacity.html" title="banner example 04" width="290" height="290">
+                <p>Your browser does not support iframes.</p>
+          </iframe>
+        </div>
+      </div>
+
+
+      <h3 class="text__subtitle">Какие есть ограничения?</h3>
+      <ul class="text__list"> 
+        <li class="text__list-item">"Вес" готового баннера. На разных площадках разрешенные размеры колеблются от 100 (pandaland) до 150 кб (google display network)</li>
+        <li class="text__list-item">Возможность/невозможность использования ссылок на внешние ресурсы. Внешние библиотеки (google display network) расширяют возможности анимации и "облегчают" баннер (часть используемых файлов не включается в готовый архив, а передается в виде ссылки).</li>
+        <li class="text__list-item">Необходимость кросс-браузерной поддержки. Особенно жесткие требования в этом плане у mail.ru, баннер должен корректно работать в Internet Exporer 10+</li>
+      </ul>
+
+
+      <h3 class="text__subtitle">чего лучше избегать при разработке сценария?</h3>
+      <ul class="text__list"> 
+        <li class="text__list-item">Слишком большого количества ключевых кадров. Оптимально до 3.</li>
+        <li class="text__list-item">Всевозможные размытия (имитация “смазанности” в движении, имитация расфокусировки при приближении объекта).</li>
+        <li class="text__list-item">Анимация теней и свечений, кроме теней от прямоугольников, квадратов, кругов.</li>
+      </ul>
+    </section>
+
+    <section class="examples">
+      <div class="container">
+        <h2 class="text__title">И в завершение немного примеров:</h2>
+        <div class="examples__figs">
+          <div class="examples__fig  examples__fig--01">
+            <!-- <h4 class="examples__subhead">Изменение положения</h4> -->
+            <iframe class="examples__example" src="banners_examples/adrenaline_240x400_gdn01/adrenaline_240x400_gdn01.html" title="banner example 05" width="240" height="400">
+                  <p>Your browser does not support iframes.</p>
+            </iframe>
+          </div>
+          <div class="examples__fig  examples__fig--02">
+            <!-- <h4 class="examples__subhead">Изменение размера</h4> -->
+            <iframe class="examples__example" src="banners_examples/Agusha_240x400_programmatic/Agusha_240x400_programmatic.html" title="banner example 06" width="240" height="400">
+                  <p>Your browser does not support iframes.</p>
+            </iframe>
+          </div>
+          <div class="examples__fig  examples__fig--03">
+            <!-- <h4 class="examples__subhead">Изменение прозрачности</h4> -->
+            <iframe class="examples__example" src="banners_examples/FS_240x400_gdn/FS_240x400_gdn.html" title="banner example 07" width="240" height="400">
+                  <p>Your browser does not support iframes.</p>
+            </iframe>
+          </div>
+
+      </div>
+      <p class="text__paragr">
+        Пока доскроллили досюда, всё уже остановилось? 
+        <button class="examples__btn" onclick="location.reload()">Перегрузите страницу</button>
+      </p>    
+      </section>
+
+  </div>
+
+
+<script>
+function openFormat(formatName, btnName) {
+    var i;
+    var x = document.getElementsByClassName("formatName");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(formatName).style.display = "block";
+
+    var btns = document.getElementsByClassName("file-formats__btn");
+    for (i = 0; i < btns.length; i++) {
+       btns[i].classList.remove("file-formats__btn--selected");  
+    }
+    document.getElementById(btnName).classList.add("file-formats__btn--selected");
+}
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: 700;
+  color: #532f1c;
+}
+
+#start {
+  /*position: absolute;*/
+  /*margin-left: 80px;*/
+  width: 80px;
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  background: #fac83c;
+}
+
+#start:hover {
+  background: #d0a93b;
+}
+
+.container {
+  position: absolute;
+  width: 240px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #53b2e5;
+  border: 1px solid #0032a0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#cloud01 {
+  position: absolute;
+  width: 100%;
+  top: 245px;
+  opacity: 0;
+}
+
+#txt01 {
+  position: absolute;
+  /*width: 196px;
+  left: 22px;
+  top: 104px;*/
+  width: 500px;
+  left: -130px;
+  top: -20px;
+  transform: rotate(120deg);
+  opacity: 0;
+}
+
+#txt02 {
+  position: absolute;
+/*  width: 196px;
+  left: 22px;
+  top: 298px;*/
+  width: 20px;
+  left: 110px;
+  top: 310px;
+  opacity: 0;
+}
+
+#blue_rect02, #blue_rect {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  /*opacity: 0;*/
+  background-color: #53b2e5;
+}
+
+#cloud02 {
+  position: absolute;
+  width: 100px;
+  left: 70px;
+  top: 190px;
+  opacity: 0;
+}
+
+#txt03 {
+  position: absolute;
+  width: 300px;
+  left: -30px;
+  top: 80px;
+  transform: rotate(60deg);
+  opacity: 0;
+}
+
+#txt04 {
+  position: absolute;
+  width: 360px;
+  left: -60px;
+  top: 100px;
+  opacity: 0;
+}
+
+#cinema {
+  position: absolute;
+  width: 100%;
+  bottom: -2px;
+  opacity: 0;
+}
+
+#logos01 {
+  position: absolute;
+  width: 360px;
+  left: -60px;
+  top: -10px;
+  opacity: 0;
+  /*outline: 1px red solid;*/
+}
+
+#logos02 {
+  position: absolute;
+  width: 86px;
+  left: 132px;
+  top: 354px;
+  opacity: 0;
+}
+
+#btn {
+  position: absolute;
+  width: 210px;
+  height: 54px;
+  top: 133px;
+  left: -240px;
+  text-align: center;
+  border-radius: 13px;
+  background: white;
+  box-shadow: 0 3px 7px rgba(72, 84, 91, 0.5);
+  transition: all 0.2s ease;
+}
+
+
+#more {
+  width: 180px;
+  position: relative;
+  top: 16px;
+}

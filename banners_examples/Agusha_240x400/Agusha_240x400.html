@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=240,height=400">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style-banner.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_1.18.0_ed5816e732515f56d96a67f6a2a15ccb_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_1.18.0_56fa823cfbbef1c2f4d4346f0f0e6c3c_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_1.18.0_71489205621d46cbe88348eeb8fe493f_min.js"></script>
+  <script type="text/javascript">
+    var clickTag = "#"; 
+
+    document.addEventListener("DOMContentLoaded", function(event) { 
+
+      var delayTxt = 0;
+
+      while (delayTxt < 200) {
+        TweenLite.to("#txt01", 0.5, {ease: Power1.easeInOut, opacity: 1, top: "104px", left: "22px", width: "196px", transform: "rotate(0deg)", delay: delayTxt + 0});
+        TweenLite.to("#cloud01", 0.8, {ease: Power1.easeInOut, opacity: 1, top: "245px", delay: delayTxt});
+        TweenLite.to("#txt02", 0.5, {ease: Power1.easeInOut, opacity: 1, top: "298px", left: "22px", width: "196px", delay: delayTxt });
+
+        TweenLite.to("#blue_rect02", 0.5, {ease: Power1.easeInOut, opacity: 1, delay: delayTxt + 1.8});
+        TweenLite.to("#cloud02", 0.5, {ease: Power1.easeInOut, opacity: 1, width: "470px", top: "16px", left: "-115px", delay: delayTxt + 1.8});
+        TweenLite.to("#txt03", 0.4, {ease: Power1.easeInOut, opacity: 1, top: "85px", left: "9px", width: "222px", transform: "rotate(0deg)", delay: delayTxt + 2.3});
+        TweenLite.to("#txt04", 0.4, {ease: Power1.easeInOut, opacity: 1, top: "196px", left: "35px", width: "170px", delay: delayTxt + 2.7});
+
+        TweenLite.to("#cloud02", 0.5, {ease: Power1.easeInOut, opacity: 0, width: "100px", top: "150px", left: "70px", delay: delayTxt + 5});
+        TweenLite.to("#txt03", 0.5, {ease: Power1.easeInOut, opacity: 0, top: "70px", left: "-30px", width: "300px", transform: "rotate(0deg)", delay: delayTxt + 5});
+        TweenLite.to("#txt04", 0.5, {ease: Power1.easeInOut, opacity: 0, top: "100px", left: "-60px", width: "360px", delay: delayTxt + 5});
+
+        TweenLite.to("#cinema", 1, {ease: Power1.easeInOut, opacity: 1, delay: delayTxt + 5.4});
+        TweenLite.to("#logos01", 0.5, {ease: Power1.easeInOut, opacity: 1, top: "8px", left: "57px", width: "131px", delay: delayTxt + 6});
+        TweenLite.to("#logos02", 0.5, {ease: Power1.easeInOut, opacity: 1, delay: delayTxt + 6.7});
+        TweenLite.to("#btn", 0.4, {ease: Power1.easeInOut, left: "15px", delay: delayTxt + 6.4});
+        TweenLite.to("#btn", 0.15, {ease: Power1.easeInOut, top: "135px", boxShadow: "0 1px 7px rgba(72, 84, 91, 0.5)", delay: delayTxt + 7.7});
+        TweenLite.to("#btn", 0.15, {ease: Power1.easeInOut, top: "133px", boxShadow: "0 3px 7px rgba(72, 84, 91, 0.5)", delay: delayTxt + 8.1});
+
+        if (delayTxt < 195) {
+          TweenLite.to("#txt01", 0, {opacity: 0, top: "-20px", left: "-130px", width: "500px", transform: "rotate(120deg)", delay: delayTxt + 9});
+          TweenLite.to("#cloud01", 0, {opacity: 0, delay: delayTxt + 9});
+          TweenLite.to("#txt02", 0, {opacity: 0, top: "310px", left: "110px", width: "20px", delay: delayTxt + 9});
+          TweenLite.to("#txt03", 0, {transform: "rotate(60deg)", delay: delayTxt + 9});
+
+          TweenLite.to("#cinema", 0.3, {ease: Power1.easeInOut, opacity: 0, delay: delayTxt + 9});
+          TweenLite.to("#logos01", 0.3, {ease: Power1.easeInOut, opacity: 0,  delay: delayTxt + 9});
+          TweenLite.to("#logos02", 0.3, {ease: Power1.easeInOut, opacity: 0, delay: delayTxt + 9});
+          TweenLite.to("#btn", 0.3, {ease: Power1.easeInOut, opacity: 0, delay: delayTxt + 8.9});
+          TweenLite.to("#blue_rect02", 0.3, {ease: Power1.easeInOut, opacity: 0, delay: delayTxt + 9});
+
+          TweenLite.to("#logos01", 0, { top: "-10px", left: "-60px", width: "360px",  delay: delayTxt + 9.35});
+          TweenLite.to("#btn", 0, {left: "-240px",  delay: delayTxt + 9.35});
+          TweenLite.to("#btn", 0, {opacity: 1, delay: delayTxt + 9.5});
+
+        }
+        delayTxt += 9.6;
+      }
+
+   });
+
+    
+  </script>
+</head>
+<body>
+  <!-- <a href="javascript:window.open(window.clickTag)" target="_blank"> -->
+    <div class="container">
+      <div id="cloud01">
+        <img src="cloud01.svg">
+      </div>
+      <div id="txt01">
+        <img src="txt01.svg">
+      </div>
+      <div id="txt02">
+        <img src="txt02.svg">
+      </div>
+      <div id="blue_rect02"></div>
+      <div id="cloud02">
+        <img src="cloud02.svg">
+      </div>
+      <div id="txt03">
+        <img src="txt03.svg">
+      </div>
+      <div id="txt04">
+        <img src="txt04.svg">
+      </div>
+      <div id="cinema">
+        <img src="cinema.jpg">
+      </div>
+      <div id="logos01">
+        <img src="logos01.png">
+      </div>
+      <div id="logos02">
+        <img src="logos02.svg">
+      </div>
+      <div id="btn">
+        <img id="more" src="txt05.svg">
+      </div>
+    </div>
+  <!-- </a> -->
+
+</body>

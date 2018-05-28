@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=240,height=400">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.min.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_1.18.0_ed5816e732515f56d96a67f6a2a15ccb_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_1.18.0_56fa823cfbbef1c2f4d4346f0f0e6c3c_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_1.18.0_71489205621d46cbe88348eeb8fe493f_min.js"></script>
+  <script type="text/javascript">
+    var clickTag = "#"; 
+
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      var delayTxt = 0;
+      while (delayTxt < 14) {
+        TweenLite.to("#stars01", 1.2, {ease: Elastic.easeInOut, opacity: 1, delay: delayTxt});
+        TweenLite.to("#stars02", 1.2, {ease: Elastic.easeInOut, opacity: 1, delay: delayTxt + 0.8});
+        TweenLite.to("#logo", 0.5, {ease: Power1.easeInOut, width: "146px", top: "20px", left:"52px", opacity: 1, delay: delayTxt + 0.6});
+        TweenLite.to("#stars03", 1.2, {ease: Elastic.easeInOut, opacity: 1, delay: delayTxt + 1.6});
+        TweenLite.to("#moon", 0.3, {ease: Power1.easeInOut, width: "103px", top: "37px", left:"-15px", opacity: 1, delay: delayTxt + 1.6});
+        TweenLite.to("#moon", 0.2, {ease: Power1.easeInOut, width: "83px", top: "45px", left:"0px", opacity: 1, delay: delayTxt + 1.9});
+        TweenLite.to("#yellow_line", 0.8, {ease: Power1.easeInOut, top: "305px", opacity: 1, delay: delayTxt + 2});
+        TweenLite.to("#product01", 1, {ease: Elastic.easeInOut, left: "5px", delay: delayTxt + 2.6});
+        TweenLite.to("#product02", 1, {ease: Elastic.easeInOut, left: "85px", delay: delayTxt + 2.9});
+        TweenLite.to("#txt01_1", 1, {ease: Elastic.easeInOut, left: "9px", delay: delayTxt + 3.6});
+        TweenLite.to("#txt01_2", 1, {ease: Elastic.easeInOut, left: "5px", delay: delayTxt + 3.6});
+  
+        TweenLite.to("#txt01_1", 1, {ease: Elastic.easeInOut, left: "310px", delay: delayTxt + 6});
+        TweenLite.to("#txt01_2", 1, {ease: Elastic.easeInOut, left: "-300px", delay: delayTxt + 6});
+  
+        TweenLite.to("#yellow_line", 0.4, {ease: Power1.easeInOut, top: "245px", delay: delayTxt + 6.2});
+        TweenLite.to("#product01", 0.4, {ease: Power1.easeInOut, top: "134px", delay: delayTxt + 6.3});
+        TweenLite.to("#product02", 0.4, {ease: Power1.easeInOut, top: "154px", delay: delayTxt + 6.4});
+        TweenLite.to("#yellow_line2", 0.4, {ease: Power1.easeInOut, top: "298px", opacity: 1, delay: delayTxt + 6.8});
+        TweenLite.to("#txt02", 0.3, {ease: Power1.easeInOut, width: "226px", top: "332px", left:"7px", opacity: 1, delay: delayTxt + 7});
+        TweenLite.to("#cloud", 1.2, {ease: Power1.easeInOut, right: "-8px", opacity: 1, delay: delayTxt + 7.6});
+
+          if (delayTxt < 12) {
+                TweenLite.to("#yellow_line", 0.6, {opacity: 0, delay: delayTxt + 11});
+                TweenLite.to("#product01", 0.6, {opacity: 0, delay: delayTxt + 11});
+                TweenLite.to("#product02", 0.6, {opacity: 0, delay: delayTxt + 11});
+                TweenLite.to("#yellow_line2", 0.6, {opacity: 0, delay: delayTxt + 11});
+                TweenLite.to("#txt02", 0.6, {opacity: 0, delay: delayTxt + 11});
+                TweenLite.to("#cloud", 0.6, {opacity: 0, delay: delayTxt + 11});
+                TweenLite.to("#logo", 0.6, {opacity: 0, delay: delayTxt + 11});
+                TweenLite.to("#moon", 0.6, {opacity: 0, delay: delayTxt + 11});
+                TweenLite.to("#stars01", 0.2, {opacity: 0, delay: delayTxt + 10.8});
+                TweenLite.to("#stars02", 0.2, {opacity: 0, delay: delayTxt + 11.1});
+                TweenLite.to("#stars03", 0.2, {opacity: 0, delay: delayTxt + 11.3});
+
+                TweenLite.to("#logo", 0, {width: "10px", left: "115px", top: "30px", delay: delayTxt + 11.7});
+                TweenLite.to("#moon", 0, {width: "3px", left: "40px", top: "75px", delay: delayTxt + 11.7});
+                TweenLite.to("#product01", 0, {top: "194px", left: "-100%", opacity: 1, delay: delayTxt + 11.7});
+                TweenLite.to("#product02", 0, {top: "214px", left: "110%", opacity: 1, delay: delayTxt + 11.7});
+                TweenLite.to("#yellow_line", 0, {top: "240px", delay: delayTxt + 11.7});
+                TweenLite.to("#yellow_line2", 0, {top: "370px", delay: delayTxt + 11.7});
+                TweenLite.to("#txt02", 0, {width: "20px", left: "110px", top: "350px", delay: delayTxt + 11.7});
+                TweenLite.to("#cloud", 0, {right: "-250px", delay: delayTxt + 11.7});
+          }
+        delayTxt += 12;
+        }
+      TweenLite.to("#cloud", 0, {animation: "none", delay: 24});
+      TweenLite.to("#moon", 0, {animation: "none", delay: 24});
+   });
+  </script>
+</head>
+<body>
+  <a href="javascript:window.open(window.clickTag)" target="_blank">
+    <div class="container">
+      <div id="bg01"></div>
+      <div id="stars01" class="stars">
+        <img src="stars01.png">
+      </div>
+      <div id="stars02" class="stars">
+        <img src="stars02.png">
+      </div>
+      <div id="stars03" class="stars">
+        <img src="stars03.png">
+      </div>
+      <div id="moon">
+        <img src="moon.png">
+      </div>
+      <div id="logo">
+        <img src="agusha_logo.png">
+      </div>
+      <div id="txt01_1" class="txt">
+        <img src="txt01_1.svg">
+      </div>
+      <div id="txt01_2" class="txt">
+        <img src="txt01_2.svg">
+      </div>
+      <div id="yellow_line">
+        <img src="yellow_line.png">
+      </div>
+      <div id="product01" class="product">
+        <img src="Tikva.png">
+      </div>
+      <div id="product02" class="product">
+        <img src="Grusha_banan.png">
+      </div>
+      <div id="yellow_line2">
+        <img src="yellow_line2.png">
+      </div>
+      <div id="txt02">
+        <img src="txt02.svg">
+      </div>
+      <div id="cloud">
+        <img src="cloud.svg">
+      </div>
+    </div>
+  </a>
+
+</body>
