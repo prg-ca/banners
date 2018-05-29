@@ -199,6 +199,8 @@ button:focus {
 .file-formats__fig {
   padding: 0;
   text-align: center; }
+  .file-formats__fig--html {
+    width: 70%; }
 
 .file-formats__note {
   color: black;
