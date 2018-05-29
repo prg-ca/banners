@@ -4,9 +4,7 @@
   <title>Немного о баннерах</title>
   <meta charset="utf-8">
   <link href="css/style.css" rel="stylesheet">
-  <!-- <link href="css/animate.css" rel="stylesheet"> -->
-<!--   <link href="css/owl.carousel.min.css" rel="stylesheet">
-  <link href="css/jquery.auto-complete.css" rel="stylesheet"> -->
+  <link href="css/animate.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
@@ -24,7 +22,7 @@
     <section class="intro  container">
       <h2 class="text__title">Что такое web-баннер?</h2>
       <p class="text__paragr">
-        Баннер (англ. banner — флаг, транспарант) — графическое изображение рекламного характера, аналогичное рекламному модулю в прессе. Может быть как статичным изображением или даже текстом, так и содержать анимированные элементы (вплоть до видео и интерактивных объектов). Содержит гиперссылку на сайт рекламодателя или страницу с дополнительной информацией.
+        Баннер (англ. banner — флаг, транспарант) — графическое изображение рекламного характера. Может быть как статичным изображением или даже текстом, так и содержать анимированные элементы (вплоть до видео и интерактивных объектов). Содержит гиперссылку на сайт рекламодателя или страницу с дополнительной информацией.
       </p>
     </section> 
 
@@ -75,6 +73,11 @@
           <a class="file-formats__link" href="https://redmondmag.com/articles/2017/07/25/adobe-ending-flash-support.aspx" target="_blank">
             И даже Adobe, владелец Flash-а, уже объявил о скором прекращении поддержки.
           </a>
+          <div class="file-formats__figs">
+            <div class="file-formats__fig">
+          <image class="file-formats__fig" src="images/flash_vs_html.png"><br>
+          <a class="file-formats__copyright" href="https://steemit.com/technology/@wolfsheed/flash-is-dead-adobe-to-stop-updating-and-distributing-flash-player-by-2020" target="_blank">© wolfsheed</a>
+        </div></div>
         </div>
 
         <div id="HTML" class="file-formats__item  formatName" style="display:none">
@@ -84,12 +87,12 @@
               <p class="text__paragr  file-formats__note">
                 HTML5-баннер <br>(архив с баннером весит меньше 150 кб).
               </p>
-              <iframe class="file-formats__banner" src="banners_examples/Agusha_240x400/Agusha_240x400.html" title="banner example 01" width="240" height="400">
+              <iframe class="file-formats__banner" id="tabIframe" src="banners_examples/Agusha_240x400/Agusha_240x400.html" title="banner example 01" width="240" height="400">
                 <p>Your browser does not support iframes.</p>
               </iframe>
             </div>
           </div>
-          <p class="text__paragr  text__paragr--left"><i>Т.к. это не рекламная площадка, во время показа баннера что-то может сбиваться или рассинхронизироваться. Если это произошло, дождитесь смены кадра или перегрузите страницу. </i></p>
+
   
 
         </div>
@@ -98,22 +101,24 @@
 
     <section class="html5  container">
       <h2 class="text__title">html5-баннер. Знакомимся ближе</h2>
-       <p class="text__paragr">
-        Заглянем внутрь готового к размещению баннера:
-      </p>
-      <div class="html5__inner-cont">
-        <div class="html5__inner-col  html5__inner-col--left">
-          <img src="images/html_inner.png">
-        </div>
-        <div class="html5__inner-col  html5__inner-col--right">
-          <ul class="text__list  text__list--html"> 
-            <li class="text__list-item">Html-файл - разметка (ЧТО должно быть в баннере). CSS-файл - стили (КАК это должно ВЫГЛЯДЕТЬ). JS-файл - анимации (КАК должно ДВИГАТЬСЯ). Файлы могут быть объединены. </li>
-            <li class="text__list-item">Все остальное - файлы jpg, svg, png - изображения, из которых баннер и строится.</li>
-            <li class="text__list-item"><i>NB: В готовом архиве не должно быть шрифтов, поэтому весь текст, набранный фирменными шрифтами, так же переводится в картинки.</i></li>
-          </ul>
+
+      <div class="html5__inner" id="inner">
+        <div class="html5__unzipped  transparent  animated" id="unzipped" onclick="zip()">
+              <div class="html__zip-item  html__zip-item--01">Html-файл - разметка (ЧТО должно быть в баннере). CSS-файл - стили (КАК это должно ВЫГЛЯДЕТЬ). JS-файл - анимации (КАК должно ДВИГАТЬСЯ). Файлы могут быть объединены. </div>
+              <div class="html__zip-item  html__zip-item--02">
+                Все остальное - файлы jpg, svg, png - изображения, из которых баннер и строится. <br>
+                <i>NB: В готовом архиве не должно быть шрифтов, поэтому весь текст, набранный фирменными шрифтами, так же переводится в картинки.</i>
+              </div>
 
         </div>
-      </div>
+
+         <div class="html5__archive  animated" id="zip" onclick="unzip()">
+            Итак, готовый к размещению HTML5-баннер представляет собой zip-архив. <br>
+            Чтобы заглянуть внутрь, кликните здесь.
+        </div>
+
+     </div>
+
       <p class="text__paragr  text__paragr--conclusion">
         Проще говоря, баннер - это совокупность картинок, которые появляются и исчезают в заданном порядке.
       </p>
@@ -160,31 +165,28 @@
     <section class="examples">
       <div class="container">
         <h2 class="text__title">И в завершение немного примеров:</h2>
+      <p class="text__paragr">
+        Пока доскроллили досюда, всё уже остановилось? 
+        <button class="examples__btn" onclick="location.reload()">Нажмите сюда</button>
+      </p>    
         <div class="examples__figs">
           <div class="examples__fig  examples__fig--01">
-            <!-- <h4 class="examples__subhead">Изменение положения</h4> -->
             <iframe class="examples__example" src="banners_examples/adrenaline_240x400_gdn01/adrenaline_240x400_gdn01.html" title="banner example 05" width="240" height="400">
                   <p>Your browser does not support iframes.</p>
             </iframe>
           </div>
           <div class="examples__fig  examples__fig--02">
-            <!-- <h4 class="examples__subhead">Изменение размера</h4> -->
             <iframe class="examples__example" src="banners_examples/Agusha_240x400_programmatic/Agusha_240x400_programmatic.html" title="banner example 06" width="240" height="400">
                   <p>Your browser does not support iframes.</p>
             </iframe>
           </div>
           <div class="examples__fig  examples__fig--03">
-            <!-- <h4 class="examples__subhead">Изменение прозрачности</h4> -->
             <iframe class="examples__example" src="banners_examples/FS_240x400_gdn/FS_240x400_gdn.html" title="banner example 07" width="240" height="400">
                   <p>Your browser does not support iframes.</p>
             </iframe>
           </div>
 
       </div>
-      <p class="text__paragr">
-        Пока доскроллили досюда, всё уже остановилось? 
-        <button class="examples__btn" onclick="location.reload()">Перегрузите страницу</button>
-      </p>    
       </section>
 
   </div>
@@ -204,7 +206,37 @@ function openFormat(formatName, btnName) {
        btns[i].classList.remove("file-formats__btn--selected");  
     }
     document.getElementById(btnName).classList.add("file-formats__btn--selected");
+
+    if (formatName == "HTML") {
+      var iframe = document.getElementById("tabIframe");
+      iframe.src = iframe.src;
+    }
 }
+
+
+function unzip() {
+  var zip = document.getElementById("zip");
+  var content = document.getElementById("unzipped");
+  var inner = document.getElementById("inner");
+  zip.classList.add("flipOutX");
+  content.classList.remove("flipOutX");
+  content.classList.add("flipInX");
+  content.classList.remove("transparent");
+  inner.classList.add("html5__inner--long");
+}
+
+function zip() {
+  var zip = document.getElementById("zip");
+  var content = document.getElementById("unzipped");
+  var inner = document.getElementById("inner");
+  zip.classList.remove("flipOutX");
+  zip.classList.add("flipInX");
+  content.classList.remove("flipInX");
+  content.classList.add("flipOutX");
+  inner.classList.remove("html5__inner--long");
+}
+
+
 </script>
 
 
