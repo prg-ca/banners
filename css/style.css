@@ -123,9 +123,38 @@ button:focus {
     height: auto; }
 
 .text__flex-cont {
+  width: 50%;
+  padding: 0 0 20px 0;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center; }
+
+@keyframes shadow-anim {
+  0% {
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4); }
+  100% {
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.4); } }
+
+.rect {
+  width: 10rem;
+  height: 10rem;
+  border: 8px black solid;
+  background: #fac83c;
+  animation: shadow-anim 1s infinite alternate; }
+  .rect--circle {
+    border-radius: 50%; }
+
+.cloud {
+  margin: 0 auto;
+  margin-left: 9rem;
+  width: 15rem;
+  height: auto;
+  background: none;
+  border: none;
+  animation: shadow-anim 1s infinite alternate; }
+  .cloud > img {
+    width: 15rem; }
 
 .page-header__title {
   margin: 0;

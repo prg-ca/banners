@@ -169,18 +169,27 @@
       <h3 class="text__subtitle">чего лучше избегать при разработке сценария?</h3>
       <ul class="text__list  text__list--flex"> 
         <li class="text__list-item  text__list-item--flex">
-        Слишком большое количество ключевых кадров. Оптимально до 3.<br>
+        Слишком большого количества ключевых кадров. Оптимально до 3.<br>
           <img class="text__list-img" src="images/donts01.png">
       </li>
-        <li class="text__list-item  text__list-item--flex">Всевозможные размытия (имитация “смазанности” в движении, имитация расфокусировки при приближении объекта).<br>
+        <li class="text__list-item  text__list-item--flex">Всевозможных размытий (имитация “смазанности” в движении, имитация расфокусировки при приближении объекта).<br>
           <p class="text__list-item"><i>Например, на предварительном сценарии есть прекрасная сцена - яблоко крутится вокруг своей оси и превращается в человека:</i></p>
           <img class="text__list-img" src="images/donts02.gif"><br>
           <p class="text__list-item"><i>На html5-баннере яблоко крутиться не будет, потому что "кручение" яблока на гифке - это 10 отдельных кадров картинок с рисованным размытием и спиральными линиями, которые подчеркивают закрученное движение</i></p>
           <img class="text__list-img" src="images/donts02.png">
 
         </li>
-        <li class="text__list-item  text__list-item--flex">Анимация теней и свечений, кроме теней от прямоугольников, квадратов, кругов.<br>
-          <img class="text__list-img" src="images/donts03.png">
+        <li class="text__list-item  text__list-item--flex">Анимации теней и свечений, кроме теней от прямоугольников, квадратов, кругов.<br>
+         <i>Все сложные объекты с тенями и свечениями экспортируются как статичные картинки</i>    
+          <img class="text__list-img" src="images/donts03a.png"><br>
+          <div class="text__flex-cont">
+            <div class="rect"></div>
+            <div class="rect rect--circle"></div>
+          </div>
+          <img class="text__list-img" src="images/donts03b.png"><br>
+          <div class="text__flex-cont">
+            <div class="cloud"><img src="images/cloud.svg"></div>
+          </div>
         </li>
       </ul>
     </section>
