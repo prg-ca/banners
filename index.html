@@ -101,8 +101,7 @@
               <image src="images/agusha_html_layers.png">
             </div>
           </div>
-<!--           <p class="text__paragr  text__paragr--left"><i>Т.к. это не рекламная площадка, во время показа баннера что-то может сбиваться или рассинхронизироваться. Если это произошло, дождитесь смены кадра или перегрузите страницу. </i></p> -->
-  
+<  
 
         </div>
       </div>
@@ -110,9 +109,7 @@
 
     <section class="html5  container">
       <h2 class="text__title">html5-баннер. Знакомимся ближе</h2>
-<!--        <p class="text__paragr">
-        Заглянем внутрь готового к размещению баннера:
-      </p> -->
+
       <div class="html5__inner" id="inner">
         <div class="html5__unzipped  transparent  animated" id="unzipped" onclick="zip()">
               <div class="html__zip-item  html__zip-item--01">Html-файл - разметка (ЧТО должно быть в баннере). CSS-файл - стили (КАК это должно ВЫГЛЯДЕТЬ). JS-файл - анимации (КАК должно ДВИГАТЬСЯ). Файлы могут быть объединены. </div>
@@ -130,19 +127,7 @@
 
      </div>
 
-<!--       <div class="html5__inner-cont">
-        <div class="html5__inner-col  html5__inner-col--left">
-          <img src="images/html_inner.png">
-        </div>
-        <div class="html5__inner-col  html5__inner-col--right">
-          <ul class="text__list  text__list--html"> 
-            <li class="text__list-item">Html-файл - разметка (ЧТО должно быть в баннере). CSS-файл - стили (КАК это должно ВЫГЛЯДЕТЬ). JS-файл - анимации (КАК должно ДВИГАТЬСЯ). Файлы могут быть объединены. </li>
-            <li class="text__list-item">Все остальное - файлы jpg, svg, png - изображения, из которых баннер и строится.</li>
-            <li class="text__list-item"><i>NB: В готовом архиве не должно быть шрифтов, поэтому весь текст, набранный фирменными шрифтами, так же переводится в картинки.</i></li>
-          </ul>
 
-        </div> -->
-      <!-- </div> -->
       <p class="text__paragr  text__paragr--conclusion">
         Проще говоря, баннер - это совокупность картинок, которые появляются и исчезают в заданном порядке.
       </p>
@@ -173,16 +158,36 @@
       <h3 class="text__subtitle">Какие есть ограничения?</h3>
       <ul class="text__list"> 
         <li class="text__list-item">"Вес" готового баннера. На разных площадках разрешенные размеры колеблются от 100 (pandaland) до 150 кб (google display network)</li>
-        <li class="text__list-item">Возможность/невозможность использования ссылок на внешние ресурсы. Внешние библиотеки (google display network) расширяют возможности анимации и "облегчают" баннер (часть используемых файлов не включается в готовый архив, а передается в виде ссылки).</li>
-        <li class="text__list-item">Необходимость кросс-браузерной поддержки. Особенно жесткие требования в этом плане у mail.ru, баннер должен корректно работать в Internet Exporer 10+</li>
+        <li class="text__list-item">
+           Возможность/невозможность использования ссылок на внешние ресурсы. Внешние библиотеки (google display network) расширяют возможности анимации и "облегчают" баннер (часть используемых файлов не включается в готовый архив, а передается в виде ссылки).
+        </li>
+        <li class="text__list-item">Необходимость кросс-браузерной поддержки. Особенно жесткие требования в этом плане у mail.ru, баннер должен корректно работать в Internet Exporer 10+
+            <div class="text__list-img  text__list-img--03"><img src="images/cross-browser.png"></div>
+        </li>
       </ul>
 
 
       <h3 class="text__subtitle">чего лучше избегать при разработке сценария?</h3>
-      <ul class="text__list"> 
+<!--       <ul class="text__list"> 
         <li class="text__list-item">Слишком большого количества ключевых кадров. Оптимально до 3.</li>
         <li class="text__list-item">Всевозможные размытия (имитация “смазанности” в движении, имитация расфокусировки при приближении объекта).</li>
         <li class="text__list-item">Анимация теней и свечений, кроме теней от прямоугольников, квадратов, кругов.</li>
+      </ul> -->
+      <ul class="text__list  text__list--flex"> 
+        <li class="text__list-item  text__list-item--flex">
+        Слишком большого количества ключевых кадров. Оптимально до 3.<br>
+          <img class="text__list-img" src="images/donts01.png">
+      </li>
+        <li class="text__list-item  text__list-item--flex">Всевозможные размытия (имитация “смазанности” в движении, имитация расфокусировки при приближении объекта).<br>
+          <p class="text__list-item"><i>Например, на предварительном сценарии есть прекрасная сцена - яблоко крутится вокруг своей оси и превращается в человека:</i></p>
+          <img class="text__list-img" src="images/donts02.gif"><br>
+          <p class="text__list-item"><i>На html5-баннере яблоко крутиться не будет, потому что "кручение" яблока на гифке - это 10 отдельных кадров картинок с рисованным размытием и спиральными линиями, которые подчеркивают закрученное движение</i></p>
+          <img class="text__list-img" src="images/donts02.png">
+
+        </li>
+        <li class="text__list-item  text__list-item--flex">Анимация теней и свечений, кроме теней от прямоугольников, квадратов, кругов.<br>
+          <img class="text__list-img" src="images/donts03.png">
+        </li>
       </ul>
     </section>
 

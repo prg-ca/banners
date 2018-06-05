@@ -114,7 +114,18 @@ button:focus {
 
 .text__list-item {
   list-style-type: square;
-  margin-bottom: 1rem; }
+  margin-bottom: 2rem; }
+
+.text__list-img {
+  width: 100%; }
+  .text__list-img--03 {
+    width: 60rem;
+    height: auto; }
+
+.text__flex-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 .page-header__title {
   margin: 0;
