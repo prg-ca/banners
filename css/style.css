@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext");
+@media (max-width: 1199px) {
+  width: 980px;
+  outline: 1px blue solid; }
+
 @font-face {
   font-family: 'Reforma';
   src: url("../fonts/ReformaGroteskBold.eot");
@@ -214,13 +218,17 @@ button:focus {
     height: 15.5rem;
     background-image: url(../images/PNG_icon.png);
     background-position: center center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: 18.5rem 13.6rem; }
   .file-formats__btn--gif::before {
-    background-image: url(../images/GIF_icon.png); }
+    background-image: url(../images/GIF_icon.png);
+    background-size: 13.5rem 12.4rem; }
   .file-formats__btn--swf::before {
-    background-image: url(../images/SWF_icon.png); }
+    background-image: url(../images/SWF_icon.png);
+    background-size: 15.5rem 14.9rem; }
   .file-formats__btn--html::before {
-    background-image: url(../images/HTML_icon.png); }
+    background-image: url(../images/HTML_icon.png);
+    background-size: 8.9rem 12.6rem; }
   .file-formats__btn--selected {
     background: #fac83c; }
   .file-formats__btn:hover {
@@ -286,6 +294,7 @@ button:focus {
 
 .html5__inner-cont {
   width: 100%;
+  outline: 1px red solid;
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: flex;
@@ -298,10 +307,15 @@ button:focus {
   width: 47%; }
 
 .html5__figs {
-  width: 100%;
+  width: 103rem;
+  margin: 0 auto;
   margin-bottom: 6rem;
   display: flex;
   justify-content: space-between; }
+  @media (max-width: 1199px) {
+    .html5__figs {
+      width: 96%;
+      padding: 0 2%; } }
 
 .html5__fig {
   width: 30%; }
@@ -318,8 +332,8 @@ button:focus {
 .html5__example {
   display: block;
   margin: 0 auto;
-  width: 29rem;
-  height: 29rem;
+  width: 290px;
+  height: 290px;
   outline: none;
   border: none;
   background: #fac83c; }
@@ -426,8 +440,8 @@ button:focus {
 .examples__example {
   display: block;
   margin: 0 auto;
-  width: 24rem;
-  height: 40rem;
+  width: 240px;
+  height: 400px;
   outline: none;
   border: none; }
 
